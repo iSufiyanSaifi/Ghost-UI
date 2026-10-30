@@ -1,0 +1,32 @@
+<!-- @dsCard group="Components" viewport="700x200" name="Composition atoms" subtitle="Chip, feedback, input and list sub-parts" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:20px;display:flex;flex-direction:column;gap:14px}.row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { ChipPrefix, ChipContent, ChipSuffix, FeedbackContent, FeedbackAction, InputAtom, FieldWrapper,
+        ListThumbnail, ListLabel, ListInfo, ListAction } = window.GhostUIDesignSystem_a29fdf;
+const a1='../../assets/img/avatar-1.jpg';
+ReactDOM.createRoot(document.getElementById('root')).render(<>
+  <div className="row">
+    <span style={{display:'inline-flex',alignItems:'center',height:36,padding:'8px 12px',borderRadius:999,boxShadow:'inset 0 0 0 .5px var(--color-border-default)'}}>
+      <ChipPrefix name="tag" /><ChipContent>Label</ChipContent><ChipSuffix type="close" onClick={()=>{}} />
+    </span>
+    <FieldWrapper style={{width:220}}><InputAtom placeholder="Type here…" aria-label="Note" /></FieldWrapper>
+    <span style={{display:'inline-flex',alignItems:'center',gap:8}}>
+      <ListThumbnail src={a1} name="Sufiyan Jin" />
+      <span style={{display:'inline-flex',flexDirection:'column'}}>
+        <ListLabel badge="Host">Sufiyan Jin</ListLabel><ListInfo>@SufiyanJin</ListInfo>
+      </span>
+      <ListAction icon="ellipsis" label="More" onClick={()=>{}} />
+    </span>
+  </div>
+  <div className="row" style={{alignItems:'flex-start'}}>
+    <FeedbackContent icon="circle-check" iconColor="var(--color-status-success)" title="Saved" align="start">Your habit is live.</FeedbackContent>
+    <FeedbackAction confirmLabel="Done" cancelLabel="Cancel" size="small" style={{width:'auto',marginLeft:'auto'}} />
+  </div>
+</>);
+</script></body></html>

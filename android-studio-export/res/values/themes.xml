@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ghost-UI Material theme. Extend from your app theme, or apply directly. -->
+    <style name="Theme.GhostUI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_action_primary</item>
+        <item name="colorPrimaryVariant">@color/color_action_primary_pressed</item>
+        <item name="colorOnPrimary">@color/color_text_on_action</item>
+        <item name="colorSecondary">@color/gh_blue_500</item>
+        <item name="colorOnSecondary">@color/color_text_on_action</item>
+        <item name="colorError">@color/color_status_error</item>
+        <item name="android:colorBackground">@color/color_bg_default</item>
+        <item name="colorSurface">@color/color_bg_surface</item>
+        <item name="colorOnSurface">@color/color_text_primary</item>
+        <item name="colorOnBackground">@color/color_text_primary</item>
+        <item name="android:fontFamily">@font/font_family_sj_pro</item>
+        <item name="fontFamily">@font/font_family_sj_pro</item>
+        <item name="android:textColorPrimary">@color/color_text_primary</item>
+        <item name="android:textColorSecondary">@color/color_text_secondary</item>
+        <item name="android:textColorLink">@color/color_text_link</item>
+        <item name="materialButtonStyle">@style/Widget.GhostUI.Button</item>
+        <item name="android:statusBarColor">@color/color_bg_default</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Widget.GhostUI.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/color_action_primary</item>
+        <item name="cornerRadius">@dimen/radius_pill</item>
+        <item name="android:minHeight">@dimen/size_control_lg</item>
+        <item name="android:textAppearance">@style/TextAppearance.GhostUI.TitleSm</item>
+        <item name="android:textColor">@color/color_text_on_action</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+</resources>

@@ -1,0 +1,59 @@
+/* Ghost-UI — space, size, radius, border, shadow, motion, layout.
+   Spacing steps are the file's "Padding & Spacing" collection verbatim. */
+:root{
+  --space-0:0px;--space-2:2px;--space-4:4px;--space-6:6px;--space-8:8px;
+  --space-10:10px;--space-12:12px;--space-16:16px;--space-20:20px;--space-24:24px;
+  --space-32:32px;--space-40:40px;--space-48:48px;--space-60:60px;--space-99:99px;
+
+  /* Control heights observed in the kit */
+  --size-control-sm:40px;--size-control-md:48px;--size-control-lg:56px;
+  --size-chip:36px;--size-tabset:44px;--size-nav:72px;--size-fab:56px;
+  --size-touch-min:44px;
+
+  --icon-12:12px;--icon-16:16px;--icon-20:20px;--icon-24:24px;
+  --icon-32:32px;--icon-40:40px;--icon-48:48px;
+  --icon-stroke:1.5; /* @kind other */
+  --icon-native:21.286px;   /* the Jin Icons art board size */
+
+  --radius-none:0px;--radius-xs:4px;--radius-sm:6px;--radius-md:8px;
+  --radius-lg:12px;--radius-xl:16px;--radius-2xl:20px;--radius-device:36px;
+  --radius-pill:999px;--radius-circle:50%;
+
+  --border-hairline:0.5px;   /* chip outline */
+  --border-thin:0.6px;       /* the kit's default control stroke */
+  --border-default:1px;
+
+  /* Ghost-UI is near-flat. Two real shadows exist in the file. */
+  --shadow-none:none;
+  --shadow-inset-control:inset -1px 3px 6px 0 var(--gh-ink-15); /* switch track */
+  --shadow-raised:0 2px 6px 0 rgba(0,0,0,0.2);                  /* floating sub-tabs, menus */
+  --shadow-fab:0 4px 12px 0 var(--gh-black-15);
+
+  --opacity-disabled:0.4; /* @kind other */
+  --opacity-muted:0.6; /* @kind other */
+  --opacity-scrim:0.3; /* @kind other */
+
+  --motion-fast:120ms; /* @kind other */
+  --motion-base:180ms; /* @kind other */
+  --motion-slow:260ms; /* @kind other */
+  --ease-standard:cubic-bezier(0.2,0,0,1); /* @kind other */
+  --ease-decelerate:cubic-bezier(0,0,0,1); /* @kind other */
+  --ease-accelerate:cubic-bezier(0.3,0,1,1); /* @kind other */
+
+  --z-base:0; /* @kind other */
+  --z-raised:10; /* @kind other */
+  --z-sticky:100; /* @kind other */
+  --z-nav:200; /* @kind other */
+  --z-overlay:900; /* @kind other */
+  --z-modal:1000; /* @kind other */
+  --z-toast:1100; /* @kind other */
+  --z-tooltip:1200; /* @kind other */
+
+  --bp-mobile:390px;--bp-tablet:768px;--bp-desktop:1080px;--bp-wide:1440px;
+  --container-mobile:390px;--container-tablet:720px;
+  --container-desktop:1032px;--container-wide:1280px;
+  --gutter-mobile:16px;--gutter-tablet:24px;--gutter-desktop:24px;
+  --columns-mobile:4; /* @kind other */
+  --columns-tablet:8; /* @kind other */
+  --columns-desktop:12; /* @kind other */
+}

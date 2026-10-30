@@ -1,0 +1,11 @@
+/* Ghost-UI webfonts. SJ Pro is the brand typeface supplied with the kit
+   (Figma variable Font Family/Brand = "Jin Pro"; the file itself renders in
+   "SF Pro Rounded", of which SJ Pro is the shipped stand-in). */
+@font-face{font-family:"SJ Pro";src:url("../assets/fonts/SJPro-Thin.otf") format("opentype");font-weight:100;font-style:normal;font-display:swap}
+@font-face{font-family:"SJ Pro";src:url("../assets/fonts/SJPro-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"SJ Pro";src:url("../assets/fonts/SJPro-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"SJ Pro";src:url("../assets/fonts/SJPro-Medium.otf") format("opentype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"SJ Pro";src:url("../assets/fonts/SJPro-SemiBold.otf") format("opentype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"SJ Pro";src:url("../assets/fonts/SJPro-Bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"SJ Pro";src:url("../assets/fonts/SJPro-Heavy.otf") format("opentype");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"SJ Pro";src:url("../assets/fonts/SJPro-Black.otf") format("opentype");font-weight:900;font-style:normal;font-display:swap}

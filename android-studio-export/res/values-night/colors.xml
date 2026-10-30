@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ghost-UI — semantic color overrides for dark theme (values-night). -->
+<resources>
+    <color name="color_bg_default">#121212</color>
+    <color name="color_bg_surface">@color/gh_ink_900</color>
+    <color name="color_bg_subtle">@color/gh_ink_850</color>
+    <color name="color_bg_box">@color/gh_ink_700</color>
+    <color name="color_bg_inverse">@color/gh_white</color>
+
+    <color name="color_text_primary">@color/gh_white</color>
+    <color name="color_text_secondary">@color/gh_grey_400</color>
+    <color name="color_text_muted">@color/gh_grey_500</color>
+    <color name="color_text_disabled">@color/gh_grey_600</color>
+    <color name="color_text_inverse">@color/gh_ink_900</color>
+    <color name="color_text_on_action">@color/gh_white</color>
+
+    <color name="color_border_default">@color/gh_grey_600</color>
+    <color name="color_border_subtle">@color/gh_ink_700</color>
+    <color name="color_border_strong">@color/gh_grey_500</color>
+
+    <color name="color_action_secondary">@color/gh_ink_850</color>
+    <color name="color_action_secondary_pressed">@color/gh_ink_700</color>
+    <color name="color_action_disabled">@color/gh_ink_700</color>
+
+    <color name="color_icon_strong">@color/gh_white</color>
+    <color name="color_icon_inverse">@color/gh_ink_900</color>
+
+    <color name="color_shadow">@color/gh_black</color>
+</resources>

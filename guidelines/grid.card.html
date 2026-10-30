@@ -1,0 +1,8 @@
+<!-- @dsCard group="Spacing" viewport="700x170" name="Grid & breakpoints" subtitle="4 / 8 / 12 columns, 390 → 1440" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Grid</title><link rel="stylesheet" href="../styles.css"><style>body{margin:0;padding:16px;font-family:var(--font-brand);display:flex;flex-direction:column;gap:10px;font-size:11px}
+.g{display:grid;gap:8px}.g span{height:22px;background:var(--gh-grey-120);border-radius:3px}
+.lbl{color:var(--color-text-secondary)}</style></head><body>
+<span class="lbl">Mobile · 390 · 4 col · 16 gutter</span><div class="g" style="grid-template-columns:repeat(4,1fr);max-width:300px"><span></span><span></span><span></span><span></span></div>
+<span class="lbl">Tablet · 768 · 8 col · 24 gutter</span><div class="g" style="grid-template-columns:repeat(8,1fr);max-width:460px"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+<span class="lbl">Desktop · 1080 · 12 col · 24 gutter</span><div class="g" style="grid-template-columns:repeat(12,1fr)"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</body></html>

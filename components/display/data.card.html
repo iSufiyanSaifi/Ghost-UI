@@ -1,0 +1,23 @@
+<!-- @dsCard group="Components" viewport="700x260" name="Data display" subtitle="DonutChart, ListRow, ProductCard" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:20px;display:flex;gap:24px;align-items:center}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { DonutChart, ListRow, ProductCard, Icon, Switch, Badge } = window.GhostUIDesignSystem_a29fdf;
+function Demo(){ const [on,setOn]=React.useState(true);
+  return <>
+    <DonutChart size={130} thickness={18} data={[{label:'Health',value:42},{label:'Focus',value:31},{label:'Social',value:27}]} />
+    <div style={{width:250}}>
+      <ListRow icon={<Icon name="bell" size={24} />} label="Notifications" description="Daily at 08:00" trailing={<Switch checked={on} onChange={setOn} />} />
+      <ListRow icon={<Icon name="shield" size={24} />} label="Privacy" chevron onClick={()=>{}} />
+      <ListRow icon={<Icon name="crown" size={24} />} label="Membership" trailing={<Badge tone="success">Verified</Badge>} />
+    </div>
+    <ProductCard image="../../assets/img/trek-hero.png" title="Blemish-Busting Facial Mist | Citrus Rain" compareAt="49.99" price="24.99" style={{width:190}} />
+  </>;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>

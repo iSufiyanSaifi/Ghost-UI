@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ghost-UI — spacing, sizing, icon, and radius tokens, transcribed 1:1 from tokens/scale.css. -->
+<resources>
+    <!-- Spacing -->
+    <dimen name="space_0">0dp</dimen>
+    <dimen name="space_2">2dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_6">6dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="space_32">32dp</dimen>
+    <dimen name="space_40">40dp</dimen>
+    <dimen name="space_48">48dp</dimen>
+    <dimen name="space_60">60dp</dimen>
+    <dimen name="space_99">99dp</dimen>
+
+    <!-- Control heights -->
+    <dimen name="size_control_sm">40dp</dimen>
+    <dimen name="size_control_md">48dp</dimen>
+    <dimen name="size_control_lg">56dp</dimen>
+    <dimen name="size_chip">36dp</dimen>
+    <dimen name="size_tabset">44dp</dimen>
+    <dimen name="size_nav">72dp</dimen>
+    <dimen name="size_fab">56dp</dimen>
+    <dimen name="size_touch_min">44dp</dimen>
+
+    <!-- Icon sizes -->
+    <dimen name="icon_12">12dp</dimen>
+    <dimen name="icon_16">16dp</dimen>
+    <dimen name="icon_20">20dp</dimen>
+    <dimen name="icon_24">24dp</dimen>
+    <dimen name="icon_32">32dp</dimen>
+    <dimen name="icon_40">40dp</dimen>
+    <dimen name="icon_48">48dp</dimen>
+
+    <!-- Radius -->
+    <dimen name="radius_none">0dp</dimen>
+    <dimen name="radius_xs">4dp</dimen>
+    <dimen name="radius_sm">6dp</dimen>
+    <dimen name="radius_md">8dp</dimen>
+    <dimen name="radius_lg">12dp</dimen>
+    <dimen name="radius_xl">16dp</dimen>
+    <dimen name="radius_2xl">20dp</dimen>
+    <dimen name="radius_device">36dp</dimen>
+    <dimen name="radius_pill">999dp</dimen>
+
+    <!-- Border widths -->
+    <dimen name="border_hairline">0.5dp</dimen>
+    <dimen name="border_thin">0.6dp</dimen>
+    <dimen name="border_default">1dp</dimen>
+
+    <!-- Elevation (approximated from the kit's two real shadows) -->
+    <dimen name="elevation_raised">2dp</dimen>
+    <dimen name="elevation_fab">4dp</dimen>
+
+    <!-- Type sizes (sp) -->
+    <dimen name="text_display_lg">57sp</dimen>
+    <dimen name="text_display_md">45sp</dimen>
+    <dimen name="text_display_sm">36sp</dimen>
+    <dimen name="text_heading_lg">32sp</dimen>
+    <dimen name="text_heading_md">28sp</dimen>
+    <dimen name="text_heading_sm">24sp</dimen>
+    <dimen name="text_title_lg">22sp</dimen>
+    <dimen name="text_title_md">20sp</dimen>
+    <dimen name="text_title_sm">18sp</dimen>
+    <dimen name="text_body_lg">16sp</dimen>
+    <dimen name="text_body_md">14sp</dimen>
+    <dimen name="text_body_sm">12sp</dimen>
+    <dimen name="text_body_xs">11sp</dimen>
+</resources>

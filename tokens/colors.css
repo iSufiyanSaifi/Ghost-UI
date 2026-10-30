@@ -1,0 +1,64 @@
+/* Ghost-UI — primitive colour tokens.
+   Values transcribed verbatim from the Ghost-Ui Figma file
+   (Colors/Colors, Colors/Monochrome, Colors/Font Color, Colors/Background,
+   Colors/Shadow & Stroke, Colors/Warnings, Colors/Icon Color). */
+:root{
+  --gh-primary-500:#1C70D4;  /* Brand colour — Ghost-UI logo blue */
+  --gh-primary-600:#1559AB;  /* Primary pressed */
+  /* Red is now the error/warning family only. Brand red — the single accent the whole system leans on */
+  --gh-red-500:#FF1947;   /* Colors/Primary (working accent, 339 uses) */
+  --gh-red-550:#EF233C;   /* Colors/Primary (palette swatch EF233C) */
+  --gh-red-560:#EC1C3C;   /* mandatory marker */
+  --gh-red-600:#F01616;   /* inline error text */
+  --gh-red-700:#B00020;   /* Warnings/Error */
+  --gh-red-icon:#E22718;  /* Icon Color/Red */
+
+  /* Supporting hues */
+  --gh-navy-700:#182E6F;  /* Colors/Primary (deep) */
+  --gh-blue-100:#A7DEFF;  /* Colors/Secondary */
+  --gh-periwinkle-100:#CECFFF; /* Colors/Secondary 2 */
+  --gh-orange-500:#FF6E32;/* Colors/Secondary Accent */
+  --gh-blue-500:#0066B1;  /* Icon Color/Blue */
+  --gh-blue-600:#005DAC;  /* Icon Color/Mono */
+  --gh-blue-800:#003D78;  /* Icon Color/Dark Blue */
+  --gh-hyperlink:#0000FF; /* Warnings/Hyperlink */
+
+  /* Status */
+  --gh-green-500:#34A853; /* Warnings/Success */
+  --gh-green-400:#10B981;
+  --gh-amber-500:#FBA715; /* Warnings/Caution */
+  --gh-amber-400:#FFBB00; /* Caution icon fill */
+
+  /* Monochrome ramp */
+  --gh-black:#000000;
+  --gh-ink-900:#202020;   /* Font Color/Dark */
+  --gh-ink-850:#282828;
+  --gh-ink-800:#303030;   /* Monochrome/Black */
+  --gh-ink-750:#363636;   /* Monochrome/MattBlack */
+  --gh-ink-700:#474747;
+  --gh-grey-600:#666666;
+  --gh-grey-500:#808080;  /* Monochrome/Black60, Font Color/Light */
+  --gh-grey-450:#898989;
+  --gh-grey-400:#A1A1A1;
+  --gh-grey-350:#BFBFBF;
+  --gh-grey-300:#C9C9C9;
+  --gh-grey-280:#CDCDCD;
+  --gh-grey-260:#D1D1D1;
+  --gh-grey-250:#D6D6D6;
+  --gh-grey-200:#E0E0E0;
+  --gh-grey-150:#E6E6E6;  /* Shadow & Stroke/Stroke */
+  --gh-grey-120:#EBECEE;  /* Colors/BoxColor */
+  --gh-grey-100:#F0F0F0;  /* Shadow & Stroke/Stroke light */
+  --gh-grey-60:#F6F6F9;
+  --gh-grey-55:#F6F8F9;
+  --gh-grey-50:#F8F8F8;   /* Colors/Surface */
+  --gh-grey-40:#F9F9F9;
+  --gh-white:#FFFFFF;
+  --gh-slate-400:#95A0B2; /* Font Color/Mono — the icon grey */
+  --gh-shadow-grey:#DADADA;
+
+  /* Alphas */
+  --gh-black-15:rgba(48,48,48,0.15);
+  --gh-black-30:rgba(48,48,48,0.30);
+  --gh-ink-15:rgba(32,32,32,0.15);
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Ghost-UI — App kit</title>
+<link rel="stylesheet" href="../styles.css"><meta name="ext-resource-dependency" content="../assets/img/trek-hero.png" data-resource-id="hero" /><meta name="ext-resource-dependency" content="../assets/img/avatar-1.jpg" data-resource-id="a1" /><meta name="ext-resource-dependency" content="../assets/img/avatar-2.png" data-resource-id="a2" /><meta name="ext-resource-dependency" content="../assets/img/avatar-3.png" data-resource-id="a3" /><template id="__bundler_thumbnail" data-bg-color="#f5f5f5"><svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="800" fill="#f5f5f5"/><rect x="450" y="100" width="300" height="600" rx="40" fill="#222"/><circle cx="600" cy="400" r="70" fill="#fff"/></svg></template>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../_ds_bundle_sa.js"></script>
+<style>body{margin:0;padding:24px;background:var(--gh-grey-50);display:flex;gap:24px;align-items:flex-start;justify-content:center}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">const { Icon, BottomNav } = window.GhostUIDesignSystem_a29fdf;
+
+/** 432x960 phone frame with the kit's 32px radius, status bar and bottom nav. */
+function StatusBar() {
+  return (
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between",
+      height: 44, padding: "0 24px", flexShrink: 0 }}>
+      <span style={{ fontFamily: "var(--font-brand)", fontSize: 15, fontWeight: 600 }}>9:41</span>
+      <span style={{ display: "flex", gap: 6, alignItems: "center" }}>
+        <Icon name="signal" size={16} color="var(--color-icon-strong)" />
+        <Icon name="wifi" size={16} color="var(--color-icon-strong)" />
+        <Icon name="battery-full" size={20} color="var(--color-icon-strong)" />
+      </span>
+    </div>
+  );
+}
+
+function Screen({ children, tab, onTab, nav = true, background = "var(--color-bg-default)" }) {
+  return (
+    <div style={{
+      position: "relative", width: 432, height: 960, overflow: "hidden",
+      borderRadius: 32, background, display: "flex", flexDirection: "column",
+      boxShadow: "inset 0 0 0 1px var(--color-border-default)", flexShrink: 0,
+    }}>
+      <StatusBar />
+      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "0 16px 16px" }}>{children}</div>
+      {nav && (
+        <div style={{ padding: "0 6px 12px" }}>
+          <BottomNav value={tab} onChange={onTab} items={[
+            { icon: "house", value: "home" },
+            { icon: "calendar-days", value: "events" },
+            { icon: "circle-plus", value: "add" },
+            { icon: "users", value: "community" },
+            { icon: "user", value: "profile" },
+          ]} />
+        </div>
+      )}
+    </div>
+  );
+}
+
+Object.assign(window, { Screen, StatusBar });
+</script>
+<script type="text/babel">const { TextField, Button, Checkbox, Icon, Divider } = window.GhostUIDesignSystem_a29fdf;
+
+function LoginScreen({ onSignIn }) {
+  const [remember, setRemember] = React.useState(true);
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 20, padding: "40px 0 0" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+        <span className="gh-heading-md" style={{ letterSpacing: "-0.5px" }}>Ghost-UI</span>
+        <span className="gh-body-md" style={{ color: "var(--color-text-secondary)" }}>
+          Sign in to pick up your habits, events and people.
+        </span>
+      </div>
+      <TextField label="Email Address" required defaultValue="sufiyan@grayvolf.com"
+        prefix={<Icon name="mail" size={24} />} />
+      <TextField label="Password" required type="password" defaultValue="password"
+        suffix={<Icon name="eye-off" size={24} />} helper="At least 8 characters" />
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <Checkbox checked={remember} onChange={setRemember} label="Remember me" />
+        <a href="#" className="gh-body-md">Forgot password?</a>
+      </div>
+      <Button variant="primary" size="big" fullWidth onClick={onSignIn}>Sign in</Button>
+      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <Divider style={{ flex: 1 }} />
+        <span className="gh-body-sm" style={{ color: "var(--color-text-secondary)" }}>or</span>
+        <Divider style={{ flex: 1 }} />
+      </div>
+      <div style={{ display: "flex", gap: 12 }}>
+        <Button variant="ghost" size="medium" fullWidth leadingIcon={<Icon name="chrome" size={20} />}>Google</Button>
+        <Button variant="ghost" size="medium" fullWidth leadingIcon={<Icon name="apple" size={20} />}>Apple</Button>
+      </div>
+      <span className="gh-body-sm" style={{ textAlign: "center", color: "var(--color-text-secondary)" }}>
+        New here? <a href="#">Create an account</a>
+      </span>
+    </div>
+  );
+}
+Object.assign(window, { LoginScreen });
+</script>
+<script type="text/babel">const { TopBar, Tabs, HabitCard, Card, Chip, Fab, Icon, ProgressRing } = window.GhostUIDesignSystem_a29fdf;
+
+const A1 = window.__resources.a1;
+const A2 = window.__resources.a2;
+const A3 = window.__resources.a3;
+
+const HABITS = [
+  { title: "Drink the water", detail: "500/2000 ML", avatar: A2, progress: 25 },
+  { title: "Sleep Early", detail: "Before 11:00 PM", avatar: A3, progress: 80 },
+  { title: "Morning run", detail: "2.4/5 KM", avatar: A1, progress: 48 },
+  { title: "Read 20 pages", detail: "14/20 pages", avatar: A2, progress: 70 },
+];
+
+function HabitsScreen({ onAdd }) {
+  const [range, setRange] = React.useState("Today");
+  return (
+    <>
+      <TopBar title="Habits" subtitle="Thursday, 13 August"
+        actions={<Icon name="bell" size={24} />} style={{ padding: "8px 0" }} />
+      <Tabs items={["Today", "Week", "Month"]} value={range} onChange={setRange} />
+      <Card outlined padding={16} style={{ marginTop: 16, gap: 12 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+          <ProgressRing value={56} size={56} thickness={4} />
+          <div style={{ display: "flex", flexDirection: "column", gap: 4, flex: 1 }}>
+            <span className="gh-title-sm">4 of 7 done</span>
+            <span className="gh-body-sm" style={{ color: "var(--color-text-secondary)" }}>Keep the streak — 12 days</span>
+          </div>
+        </div>
+        <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+          <Chip active>All</Chip><Chip>Health</Chip><Chip>Focus</Chip>
+        </div>
+      </Card>
+      <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: 16 }}>
+        {HABITS.map((h, i) => <HabitCard key={i} {...h} friends={i === 0 ? [{src:A1},{src:A3},{src:A2},{src:A1},{src:A2}] : undefined} />)}
+      </div>
+      <Fab label="Add habit" onClick={onAdd} icon={<Icon name="plus" size={24} color="#fff" />}
+        style={{ position: "absolute", right: 20, bottom: 104 }} />
+    </>
+  );
+}
+Object.assign(window, { HabitsScreen });
+</script>
+<script type="text/babel">const { TopBar, SearchBar, Chip, EventCard, IconButton, Icon } = window.GhostUIDesignSystem_a29fdf;
+const HERO = window.__resources.hero;
+const A1 = window.__resources.a1;
+
+const EVENTS = [
+  { date: "July 28", title: "Tracking on Chembra Peak in Kerala 2 Days 3 Nights", price: "4999/-" },
+  { date: "Aug 09", title: "Sunrise paddle at Ashtamudi Lake — beginners welcome", price: "1299/-" },
+];
+
+function EventsScreen({ onOpen }) {
+  const [filter, setFilter] = React.useState("All");
+  return (
+    <>
+      <TopBar title="Events" subtitle="Kerala · 12 upcoming" style={{ padding: "8px 0" }}
+        actions={<IconButton label="Saved" icon={<Icon name="bookmark" size={20} color="#202020" />} />} />
+      <SearchBar placeholder="Search Events..." filter />
+      <div style={{ display: "flex", gap: 8, margin: "16px 0", overflowX: "auto" }}>
+        {["All", "Trekking", "Water", "Nearby", "Free"].map(f => (
+          <Chip key={f} active={filter === f} onClick={() => setFilter(f)}>{f}</Chip>
+        ))}
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        {EVENTS.map((e, i) => (
+          <EventCard key={i} {...e} image={HERO} hostName="Sufiyan Jin" hostHandle="@SufiyanJin"
+            hostAvatar={A1} onShare={onOpen} style={{ width: "100%", padding: 0 }} />
+        ))}
+      </div>
+    </>
+  );
+}
+Object.assign(window, { EventsScreen });
+</script>
+<script type="text/babel">const { TopBar, PostCard, ReviewCard, Icon } = window.GhostUIDesignSystem_a29fdf;
+const HERO = window.__resources.hero;
+const A1 = window.__resources.a1;
+
+function CommunityScreen() {
+  const [liked, setLiked] = React.useState(false);
+  return (
+    <>
+      <TopBar title="Community" style={{ padding: "8px 0" }} actions={<Icon name="message-circle" size={24} />} />
+      <PostCard image={HERO} authorName="Sufiyan Jin" authorAvatar={A1} hashtag="#Traking"
+        caption="Tracking on Chembra Peak in Kerala 2 Days 3 Nights"
+        liked={liked} onLike={() => setLiked(v => !v)}
+        style={{ width: "100%", padding: 0, background: "transparent" }} />
+      <ReviewCard name="Sufiyan Jin" handle="@SufiyanJin" avatar={A1} rating="4.6"
+        style={{ width: "100%", padding: "12px 0" }}
+        body="Bahut cooperative aur supportive hain. Team ke sath kaam karne me maza aata hai. Thoda aur time management pe kaam kar sakte hain." />
+    </>
+  );
+}
+Object.assign(window, { CommunityScreen });
+</script>
+<script type="text/babel">const { TopBar, Avatar, Button, Card, Switch, Divider, Badge, Icon, ProfileRow } = window.GhostUIDesignSystem_a29fdf;
+const A1 = window.__resources.a1;
+
+function ProfileScreen({ onSignOut }) {
+  const [reminders, setReminders] = React.useState(true);
+  const [dark, setDark] = React.useState(false);
+  return (
+    <>
+      <TopBar title="Profile" style={{ padding: "8px 0" }}
+        actions={<Icon name="settings" size={24} />} />
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12, padding: "16px 0" }}>
+        <Avatar src={A1} size="xl" />
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
+          <span className="gh-title-lg" style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
+            Sufiyan Jin <Icon name="badge-check" size={16} color="#2563EB" />
+          </span>
+          <span className="gh-body-md" style={{ color: "var(--color-text-secondary)" }}>@SufiyanJin · Kerala</span>
+        </div>
+        <div style={{ display: "flex", gap: 8 }}>
+          <Button size="small" variant="primary">Edit profile</Button>
+          <Button size="small" variant="ghost">Share</Button>
+        </div>
+      </div>
+      <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+        {[["12", "Habits"], ["4.6", "Rating"], ["38", "Events"]].map(([v, l]) => (
+          <Card key={l} outlined padding={12} style={{ flex: 1, alignItems: "center", gap: 2 }}>
+            <span className="gh-title-md">{v}</span>
+            <span className="gh-body-sm" style={{ color: "var(--color-text-secondary)" }}>{l}</span>
+          </Card>
+        ))}
+      </div>
+      <Card outlined padding={16} style={{ gap: 14 }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <span className="gh-body-lg">Daily reminders</span>
+          <Switch checked={reminders} onChange={setReminders} />
+        </div>
+        <Divider />
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <span className="gh-body-lg">Dark theme</span>
+          <Switch checked={dark} onChange={v => { setDark(v); document.documentElement.setAttribute("data-theme", v ? "dark" : "light"); }} />
+        </div>
+        <Divider />
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <span className="gh-body-lg">Membership</span>
+          <Badge tone="success">Verified</Badge>
+        </div>
+      </Card>
+      <div style={{ marginTop: 16 }}>
+        <ProfileRow name="Ayesha K." handle="Invited you to Chembra Peak" src={A1}
+          trailing={<Button size="small" variant="primary">Accept</Button>} />
+      </div>
+      <Button variant="ghost" size="medium" fullWidth style={{ marginTop: 16 }} onClick={onSignOut}>Sign out</Button>
+    </>
+  );
+}
+Object.assign(window, { ProfileScreen });
+</script>
+<script type="text/babel">
+const { Dialog } = window.GhostUIDesignSystem_a29fdf;
+function App(){
+  const [signedIn,setSignedIn]=React.useState(false);
+  const [tab,setTab]=React.useState('home');
+  const [dialog,setDialog]=React.useState(false);
+  if(!signedIn) return <Screen nav={false}><LoginScreen onSignIn={()=>setSignedIn(true)} /></Screen>;
+  const body = tab==='events' ? <EventsScreen onOpen={()=>setDialog(true)} />
+    : tab==='community' ? <CommunityScreen />
+    : tab==='profile' ? <ProfileScreen onSignOut={()=>setSignedIn(false)} />
+    : <HabitsScreen onAdd={()=>setDialog(true)} />;
+  return <>
+    <Screen tab={tab} onTab={t=>setTab(t==='add'?'home':t)}>{body}</Screen>
+    {dialog && <div style={{position:'fixed',inset:0,background:'var(--color-scrim)',display:'flex',alignItems:'center',justifyContent:'center',zIndex:1000}}>
+      <Dialog title="Confirmation" confirmLabel="Approve" cancelLabel="Cancel"
+        onConfirm={()=>setDialog(false)} onCancel={()=>setDialog(false)}>
+        You've submitted your details. If everything looks correct, click 'Approve' to proceed or cancel to make changes
+      </Dialog></div>}
+  </>;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>

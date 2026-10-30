@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ghost-UI — TextAppearance styles, one per type-scale step. All use the SJ Pro family; weight carries hierarchy. -->
+<resources>
+    <style name="TextAppearance.GhostUI.DisplayLg" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/font_family_sj_pro</item>
+        <item name="android:fontFamily">@font/font_family_sj_pro</item>
+        <item name="android:textSize">@dimen/text_display_lg</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:letterSpacing">-0.0044</item>
+    </style>
+    <style name="TextAppearance.GhostUI.DisplayMd" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/font_family_sj_pro</item>
+        <item name="android:fontFamily">@font/font_family_sj_pro</item>
+        <item name="android:textSize">@dimen/text_display_md</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+    </style>
+    <style name="TextAppearance.GhostUI.DisplaySm" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/font_family_sj_pro</item>
+        <item name="android:fontFamily">@font/font_family_sj_pro</item>
+        <item name="android:textSize">@dimen/text_display_sm</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+    </style>
+    <style name="TextAppearance.GhostUI.HeadingLg" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/font_family_sj_pro</item>
+        <item name="android:fontFamily">@font/font_family_sj_pro</item>
+        <item name="android:textSize">@dimen/text_heading_lg</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textFontWeight">600</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+    </style>
+    <style name="TextAppearance.GhostUI.HeadingMd" parent="TextAppearance.GhostUI.HeadingLg">
+        <item name="android:textSize">@dimen/text_heading_md</item>
+    </style>
+    <style name="TextAppearance.GhostUI.HeadingSm" parent="TextAppearance.GhostUI.HeadingLg">
+        <item name="android:textSize">@dimen/text_heading_sm</item>
+    </style>
+    <style name="TextAppearance.GhostUI.TitleLg" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/font_family_sj_pro</item>
+        <item name="android:fontFamily">@font/font_family_sj_pro</item>
+        <item name="android:textSize">@dimen/text_title_lg</item>
+        <item name="android:textFontWeight">500</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+    </style>
+    <style name="TextAppearance.GhostUI.TitleMd" parent="TextAppearance.GhostUI.TitleLg">
+        <item name="android:textSize">@dimen/text_title_md</item>
+        <item name="android:letterSpacing">0.0075</item>
+    </style>
+    <style name="TextAppearance.GhostUI.TitleSm" parent="TextAppearance.GhostUI.TitleLg">
+        <item name="android:textSize">@dimen/text_title_sm</item>
+        <item name="android:letterSpacing">0.0055</item>
+    </style>
+    <style name="TextAppearance.GhostUI.BodyLg" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/font_family_sj_pro</item>
+        <item name="android:fontFamily">@font/font_family_sj_pro</item>
+        <item name="android:textSize">@dimen/text_body_lg</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textColor">@color/color_text_primary</item>
+    </style>
+    <style name="TextAppearance.GhostUI.BodyMd" parent="TextAppearance.GhostUI.BodyLg">
+        <item name="android:textSize">@dimen/text_body_md</item>
+        <item name="android:letterSpacing">0.018</item>
+    </style>
+    <style name="TextAppearance.GhostUI.BodySm" parent="TextAppearance.GhostUI.BodyLg">
+        <item name="android:textSize">@dimen/text_body_sm</item>
+        <item name="android:letterSpacing">0.033</item>
+        <item name="android:textColor">@color/color_text_secondary</item>
+    </style>
+    <style name="TextAppearance.GhostUI.BodyXs" parent="TextAppearance.GhostUI.BodySm">
+        <item name="android:textSize">@dimen/text_body_xs</item>
+        <item name="android:letterSpacing">0.045</item>
+    </style>
+</resources>

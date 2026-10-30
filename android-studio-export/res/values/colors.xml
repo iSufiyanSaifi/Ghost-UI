@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ghost-UI — primitive + semantic colors, light theme (default). -->
+<resources>
+    <!-- Primitives -->
+    <color name="gh_primary_500">#1C70D4</color>
+    <color name="gh_primary_600">#1559AB</color>
+    <color name="gh_red_500">#FF1947</color>
+    <color name="gh_red_550">#EF233C</color>
+    <color name="gh_red_560">#EC1C3C</color>
+    <color name="gh_red_600">#F01616</color>
+    <color name="gh_red_700">#B00020</color>
+    <color name="gh_red_icon">#E22718</color>
+    <color name="gh_navy_700">#182E6F</color>
+    <color name="gh_blue_100">#A7DEFF</color>
+    <color name="gh_periwinkle_100">#CECFFF</color>
+    <color name="gh_orange_500">#FF6E32</color>
+    <color name="gh_blue_500">#0066B1</color>
+    <color name="gh_blue_600">#005DAC</color>
+    <color name="gh_blue_800">#003D78</color>
+    <color name="gh_hyperlink">#0000FF</color>
+    <color name="gh_green_500">#34A853</color>
+    <color name="gh_green_400">#10B981</color>
+    <color name="gh_amber_500">#FBA715</color>
+    <color name="gh_amber_400">#FFBB00</color>
+    <color name="gh_black">#000000</color>
+    <color name="gh_ink_900">#202020</color>
+    <color name="gh_ink_850">#282828</color>
+    <color name="gh_ink_800">#303030</color>
+    <color name="gh_ink_750">#363636</color>
+    <color name="gh_ink_700">#474747</color>
+    <color name="gh_grey_600">#666666</color>
+    <color name="gh_grey_500">#808080</color>
+    <color name="gh_grey_450">#898989</color>
+    <color name="gh_grey_400">#A1A1A1</color>
+    <color name="gh_grey_350">#BFBFBF</color>
+    <color name="gh_grey_300">#C9C9C9</color>
+    <color name="gh_grey_280">#CDCDCD</color>
+    <color name="gh_grey_260">#D1D1D1</color>
+    <color name="gh_grey_250">#D6D6D6</color>
+    <color name="gh_grey_200">#E0E0E0</color>
+    <color name="gh_grey_150">#E6E6E6</color>
+    <color name="gh_grey_120">#EBECEE</color>
+    <color name="gh_grey_100">#F0F0F0</color>
+    <color name="gh_grey_60">#F6F6F9</color>
+    <color name="gh_grey_55">#F6F8F9</color>
+    <color name="gh_grey_50">#F8F8F8</color>
+    <color name="gh_grey_40">#F9F9F9</color>
+    <color name="gh_white">#FFFFFF</color>
+    <color name="gh_slate_400">#95A0B2</color>
+    <color name="gh_shadow_grey">#DADADA</color>
+    <color name="gh_black_15">#26303030</color>
+    <color name="gh_black_30">#4D303030</color>
+    <color name="gh_ink_15">#26202020</color>
+
+    <!-- Semantic — light -->
+    <color name="color_bg_default">@color/gh_white</color>
+    <color name="color_bg_surface">@color/gh_grey_50</color>
+    <color name="color_bg_subtle">@color/gh_grey_40</color>
+    <color name="color_bg_box">@color/gh_grey_120</color>
+    <color name="color_bg_inverse">@color/gh_ink_900</color>
+
+    <color name="color_text_primary">@color/gh_ink_900</color>
+    <color name="color_text_secondary">@color/gh_grey_500</color>
+    <color name="color_text_muted">@color/gh_grey_350</color>
+    <color name="color_text_disabled">@color/gh_grey_300</color>
+    <color name="color_text_inverse">@color/gh_white</color>
+    <color name="color_text_link">@color/gh_hyperlink</color>
+    <color name="color_text_on_action">@color/gh_white</color>
+
+    <color name="color_border_default">@color/gh_grey_150</color>
+    <color name="color_border_subtle">@color/gh_grey_100</color>
+    <color name="color_border_strong">@color/gh_grey_300</color>
+    <color name="color_border_focus">@color/gh_primary_500</color>
+
+    <color name="color_action_primary">@color/gh_primary_500</color>
+    <color name="color_action_primary_pressed">@color/gh_primary_600</color>
+    <color name="color_action_secondary">@color/gh_grey_50</color>
+    <color name="color_action_secondary_pressed">@color/gh_grey_150</color>
+    <color name="color_action_disabled">@color/gh_grey_150</color>
+
+    <color name="color_icon_default">@color/gh_slate_400</color>
+    <color name="color_icon_strong">@color/gh_ink_900</color>
+    <color name="color_icon_inverse">@color/gh_white</color>
+    <color name="color_icon_accent">@color/gh_primary_500</color>
+    <color name="color_icon_info">@color/gh_blue_600</color>
+
+    <color name="color_status_success">@color/gh_green_500</color>
+    <color name="color_status_warning">@color/gh_amber_500</color>
+    <color name="color_status_error">@color/gh_red_700</color>
+    <color name="color_status_error_text">@color/gh_red_600</color>
+    <color name="color_status_info">@color/gh_blue_500</color>
+    <color name="color_status_required">@color/gh_red_560</color>
+
+    <color name="color_shadow">@color/gh_shadow_grey</color>
+    <color name="color_scrim">@color/gh_black_30</color>
+</resources>

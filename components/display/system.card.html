@@ -1,0 +1,36 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Lists & system" subtitle="ListItem, Stepper, PageDots, BatteryIndicator, ChatBubble, ButtonBar" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:20px;display:grid;grid-template-columns:1fr 250px;gap:16px 24px;align-items:start}.col{display:flex;flex-direction:column;gap:12px}.row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { ListItem, Stepper, PageDots, BatteryIndicator, ChatBubble, ButtonBar, ApprovalButtons, AndroidNavBar, Badge } = window.GhostUIDesignSystem_a29fdf;
+const a1='../../assets/img/avatar-1.jpg', a2='../../assets/img/avatar-2.png';
+function Demo(){
+  const [qty,setQty]=React.useState(2); const [page,setPage]=React.useState(1);
+  return <>
+    <div className="col">
+      <ListItem thumbnail={a1} label="Sufiyan Jin" badge={<Badge tone="success">Host</Badge>}
+        info="@SufiyanJin" secondaryInfo="Joined 12 events" chevron onClick={()=>{}} />
+      <ListItem thumbnail={a2} label="Chembra Peak trek" thumbnailType="image"
+        info="July 28 · Kerala" actions={<ApprovalButtons />} />
+      <div className="row">
+        <Stepper label="Tickets" value={qty} onChange={setQty} min={1} max={10} />
+        <PageDots count={4} index={page} onSelect={setPage} />
+        <BatteryIndicator level={18} showPercent />
+        <BatteryIndicator level={64} charging />
+      </div>
+      <AndroidNavBar type="buttons" />
+    </div>
+    <div className="col">
+      <ChatBubble time="9:40">See you at the trailhead</ChatBubble>
+      <ChatBubble direction="out" time="9:41" status="read">On my way</ChatBubble>
+      <ButtonBar primaryLabel="Book now" secondaryLabel="Save" size="small" />
+    </div>
+  </>;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>

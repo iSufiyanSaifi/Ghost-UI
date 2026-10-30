@@ -1,0 +1,74 @@
+/* Ghost-UI — semantic colour tokens.
+   Light is the default theme; dark is applied with [data-theme="dark"] or .dark
+   on any ancestor. Components reference ONLY these, never the primitives. */
+:root,[data-theme="light"],.light{
+  color-scheme:light;
+  --color-bg-default:var(--gh-white);
+  --color-bg-surface:var(--gh-grey-50);
+  --color-bg-subtle:var(--gh-grey-40);
+  --color-bg-box:var(--gh-grey-120);
+  --color-bg-inverse:var(--gh-ink-900);
+
+  --color-text-primary:var(--gh-ink-900);
+  --color-text-secondary:var(--gh-grey-500);
+  --color-text-muted:var(--gh-grey-350);
+  --color-text-disabled:var(--gh-grey-300);
+  --color-text-inverse:var(--gh-white);
+  --color-text-link:var(--gh-hyperlink);
+  --color-text-on-action:var(--gh-white);
+
+  --color-border-default:var(--gh-grey-150);
+  --color-border-subtle:var(--gh-grey-100);
+  --color-border-strong:var(--gh-grey-300);
+  --color-border-focus:var(--gh-primary-500);
+
+  --color-action-primary:var(--gh-primary-500);
+  --color-action-primary-pressed:var(--gh-primary-600);
+  --color-action-secondary:var(--gh-grey-50);
+  --color-action-secondary-pressed:var(--gh-grey-150);
+  --color-action-disabled:var(--gh-grey-150);
+
+  --color-icon-default:var(--gh-slate-400);
+  --color-icon-strong:var(--gh-ink-900);
+  --color-icon-inverse:var(--gh-white);
+  --color-icon-accent:var(--gh-primary-500);
+  --color-icon-info:var(--gh-blue-600);
+
+  --color-status-success:var(--gh-green-500);
+  --color-status-warning:var(--gh-amber-500);
+  --color-status-error:var(--gh-red-700);
+  --color-status-error-text:var(--gh-red-600);
+  --color-status-info:var(--gh-blue-500);
+  --color-status-required:var(--gh-red-560);
+
+  --color-shadow:var(--gh-shadow-grey);
+  --color-scrim:var(--gh-black-30);
+}
+[data-theme="dark"],.dark{
+  color-scheme:dark;
+  --color-bg-default:#121212;              /* Background/Background dark */
+  --color-bg-surface:var(--gh-ink-900);    /* Background/Surface dark */
+  --color-bg-subtle:var(--gh-ink-850);
+  --color-bg-box:var(--gh-ink-700);
+  --color-bg-inverse:var(--gh-white);
+
+  --color-text-primary:var(--gh-white);
+  --color-text-secondary:var(--gh-grey-400);
+  --color-text-muted:var(--gh-grey-500);
+  --color-text-disabled:var(--gh-grey-600);
+  --color-text-inverse:var(--gh-ink-900);
+  --color-text-on-action:var(--gh-white);
+
+  --color-border-default:var(--gh-grey-600);
+  --color-border-subtle:var(--gh-ink-700);
+  --color-border-strong:var(--gh-grey-500);
+
+  --color-action-secondary:var(--gh-ink-850);
+  --color-action-secondary-pressed:var(--gh-ink-700);
+  --color-action-disabled:var(--gh-ink-700);
+
+  --color-icon-strong:var(--gh-white);
+  --color-icon-inverse:var(--gh-ink-900);
+
+  --color-shadow:var(--gh-black);
+}
